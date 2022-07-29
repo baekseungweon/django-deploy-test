@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>유저 정보</title>
+</head>
+<body>
+<h1>유저 정보</h1>
+
+    <p>닉네임: {{player.name}}</p>
+    <p>코인량: {{player.coin}}</p>
+
+    <a href='/players/'>목록으로</a>
+    <a href='/players/{{player.id}}/edit'>수정하기</a>
+    <a href='/players/{{player.id}}/delete'>삭제하기</a>
+</body>
+</html>

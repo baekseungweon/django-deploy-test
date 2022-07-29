@@ -1,0 +1,15 @@
+asgiref==3.4.1
+async-timeout==4.0.2
+Deprecated==1.2.13
+Django==2.0
+django-redis==5.2.0
+importlib-metadata==4.8.3
+mysqlclient @ file:///C:/Users/USER/Desktop/DB_TEST1/mysqlclient-1.3.12-cp36-cp36m-win_amd64.whl
+packaging==21.3
+pyparsing==3.0.7
+pytz==2022.1
+redis==4.3.4
+sqlparse==0.4.2
+typing_extensions==4.1.1
+wrapt==1.14.1
+zipp==3.6.0

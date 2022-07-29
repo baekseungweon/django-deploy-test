@@ -1,0 +1,18 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>CMS처럼 생긴거</title>
+    </head>
+    <body>
+        <a href="{% url 'player-create'%}">유저 생성</a>
+
+        {% for data in result_rank %}
+        <div><a href='/players/{{data.id}}'>
+            <p>순위: {{data.rank}} // 닉네임: {{data.name}} // 코인량: {{data.score}}</p>
+        </a></div>
+        {% endfor %}
+    </body>
+</html>

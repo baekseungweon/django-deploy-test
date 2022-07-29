@@ -1,0 +1,25 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>CMS처럼 생긴거</title>
+    </head>
+    <body>
+        <h1>코인량 순위</h1>
+        {% for data in result_rank %}
+            <p>순위: {{data.idx}} // 닉네임: {{data.name}} // 코인량: {{data.score}}</p>
+        {% endfor %}
+
+{#        {% for name, score in range_rank %}#}
+{#            <p>{{forloop.counter0|add:1}}</p>#}
+{#            <p>{{name}}</p>#}
+{#            <p>{{score}}</p>#}
+{#        {% endfor %}#}
+
+{#        {% for player in players %}#}
+{#            <p>닉네임: {{player.name}} & 코인량: {{player.coin}}</p>#}
+{#        {% endfor %}#}
+    </body>
+</html>

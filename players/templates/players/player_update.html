@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CMS처럼 생긴거</title>
+</head>
+<body>
+    <h1>유저 정보 변경</h1>
+
+    <form method="POST">{% csrf_token %}
+            <p>{{form.name}}</p>
+            <p>{{form.coin}}</p>
+        <input type="submit" value="변경">
+    </form>
+        <a href="{% url 'player-list' %}">돌아가기</a>
+</body>
+</html>
